@@ -47,7 +47,7 @@ class Detail extends Component {
                 <Container style={{ marginTop: 15 }}>
                     <Row>
                         <Col sm="12" md={{ size: 7, offset:20}}>
-                            <DetailBuku detail={this.state.data[0]} />
+                            <DetailBuku detail={this.state.data} />
                         </Col>
                     </Row>
                 </Container>

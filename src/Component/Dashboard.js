@@ -36,7 +36,7 @@ class Dashboard extends Component {
             <Navs />
             
             <Card 
-                style={{ width: '90%', display: 'inline-block', marginLeft: '5%', marginRight: '5%',paddingBottom:100 }}
+                style={{ width: '90%', display: 'inline-block', marginLeft: '5%', marginRight: '5%',paddingBottom:100, borderWidth: 0}}
             >
                 {/* <Search placeholder="input search text" onSearch={onSearch} enterButton /> */}
                 <div>

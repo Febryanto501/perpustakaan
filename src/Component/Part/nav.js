@@ -40,8 +40,11 @@ class nav extends Component {
                     <NavLink href="/Dashboard">Dashboard</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/Manage_Data">Manage Data</NavLink>
+                    <NavLink href="/Manage_Data">Manage Buku</NavLink>
                     </NavItem>
+                    {/* <NavItem>
+                    <NavLink href="/Add">Add Buku</NavLink>
+                    </NavItem> */}
                     <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                         Options

@@ -7,6 +7,7 @@ import Modals from './Modal';
 
 
 
+
 class ListBuku extends React.Component {
     constructor(props) {
         super(props)
@@ -31,6 +32,7 @@ class ListBuku extends React.Component {
         //console.log(this.props);
         const lists = this.props.list.map((e, i) => {
              return (
+                 
                  <tr key={i}>
                      <td>{i+1}</td>
                      <td>{e.kd_buku}</td>
@@ -47,11 +49,16 @@ class ListBuku extends React.Component {
          })
         return (
             <div>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
+                <Button color="primary" size='xxl' href="/Add"><FontAwesome name='add' />Add</Button>{' '}
+                </div>
+                <br></br>
                 <Modals
                     modal={this.state.modal}
                     toggle={this.toggle}
                     kd_buku={this.state.kd_buku}
                 />
+                
                 <Table striped>
                     <thead>
                         <tr>
