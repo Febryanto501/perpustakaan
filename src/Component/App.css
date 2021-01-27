@@ -1,0 +1,203 @@
+.result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin: 10px 0px;
+}
+
+img{
+    width: 400px;
+}
+
+.resultCard{
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 8px 7px 13px 0px #dadada;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .column1 {
+    border-width:5px ;
+    float: left;
+    width: 450px;
+    padding: 10px;
+    height: -20px; /* Should be removed. Only for demonstration */
+  }
+
+  .column2 {
+    border-width:5px ;
+    float: left;
+    width: 1000px;
+    padding: 10px;
+    height: -20px; /* Should be removed. Only for demonstration */
+  }
+
+.custom-header {
+  background: #282c34;
+  padding: 10px 20px;
+}
+.custom-subheader{
+  align-self: center;
+  color: #909090;
+}
+.footer {
+  background: #FEDCBA;
+  height: 20px;
+  padding: 5px;
+  color: #654321;
+  text-align: center;
+}
+.App-footer{
+  background-color: #282c34;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.restaurants-list {
+  list-style: none;
+}
+
+.restaurants-list li {
+  display: inline-block;
+  width: 20%;
+  height: 165px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #987654;
+  vertical-align: top;
+}
+
+.restaurants-list li .rating {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #AF0000;
+}
+
+.restaurants-list li .rating img {
+  height: 28px;
+  position: relative;
+  top: 5px;
+}
+
+.votesType {
+  font-size: small;
+  color: #909090;
+}
+.restaurantName{
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+.restaurantMotto{
+  font-size: 12px;
+  color: #909090;
+}
+
+.restaurants-list li .city {
+  font-weight: bold;
+}
+
+.custom-header {
+    background: #282c34;
+    padding: 10px 20px;
+  }
+  .custom-subheader{
+    align-self: center;
+    color: #909090;
+  }
+  .footer {
+    background: #FEDCBA;
+    height: 20px;
+    padding: 5px;
+    color: #654321;
+    text-align: center;
+  }
+  .App-footer{
+    background-color: #282c34;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .restaurants-list {
+    list-style: none;
+  }
+  
+  .restaurants-list li {
+    display: inline-block;
+    width: 20%;
+    height: 165px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #987654;
+    vertical-align: top;
+  }
+  
+  .restaurants-list li .rating {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #AF0000;
+  }
+  
+  .restaurants-list li .rating img {
+    height: 28px;
+    position: relative;
+    top: 5px;
+  }
+  
+  .votesType {
+    font-size: small;
+    color: #909090;
+  }
+  .restaurantName{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .restaurantMotto{
+    font-size: 12px;
+    color: #909090;
+  }
+  
+  .restaurants-list li .city {
+    font-weight: bold;
+  }
+
