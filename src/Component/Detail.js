@@ -24,7 +24,7 @@ class Detail extends Component {
             .then((results) => {
                 //const data = results.data;
                 //console.log(results.data);
-                delete this.state.data;
+                //delete this.state.data;
                 this.setState({
                     data : results.data
                 });
@@ -39,7 +39,7 @@ class Detail extends Component {
 
     render() {
         //console.table(this.state.data);
-        //console.log(this.state.data[0]);
+        console.log(this.state.data);
         return (
             <div>
                 <Navs />

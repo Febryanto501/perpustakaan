@@ -21,6 +21,7 @@ class AddBuku extends React.Component{
             kategori_buku: '',
             ket: '',
             redirect: false
+            
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.InputChangeHandler = this.InputChangeHandler.bind(this)
@@ -34,24 +35,25 @@ class AddBuku extends React.Component{
             [name]: value
         })
     }
+
     handleSubmit(e) {
         e.preventDefault();
         const data = this.state
         delete data.redirect
 
-        console.log(data);
-        axios.post('http://localhost:3001/buku/save',data)
+        //console.log(data);
+        axios.post('http://localhost:3001/buku',data)
             .then((result) => {
                 //console.log(result)
                 //console.log(result.data)
                 this.setState({redirect: true})
-                window.location.href = '/Dashboard';
+                window.location.href = '/Home';
             })
-            .catch(({ response }) => { 
-                console.log(response.data);  
-                console.log(response.status);  
-                console.log(response.headers);  
-            })
+            // .catch(({ response }) => { 
+            //     console.log(response.data);  
+            //     console.log(response.status);  
+            //     console.log(response.headers);  
+            // })
     }
 
     render(){

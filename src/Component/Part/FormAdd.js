@@ -40,9 +40,9 @@ class FormAdd extends React.Component{
                     <Label for="examplePassword" sm={2}>Cover</Label>
                     <Col sm={10}>
                         <Input
-                            type="file"
+                            type="link"
                             name="cover"
-                            placeholder="Cover"
+                            placeholder="Url Gambar"
                             value={this.props.cover}
                             onChange={this.props.InputChangeHandler}
                         />
@@ -78,7 +78,7 @@ class FormAdd extends React.Component{
                         <Input
                             name="kategori_buku"
                             type="text"
-                            placeholder="Kategori_Buku"
+                            placeholder="Kategori Buku"
                             value={this.props.kategori_buku}
                             onChange={this.props.InputChangeHandler}
                         />

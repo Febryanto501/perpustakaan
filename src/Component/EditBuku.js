@@ -12,7 +12,7 @@ class EditBuku extends React.Component {
     constructor(props){
         super(props)
         this.state = { 
-            data: [],
+            //data: [],
             judul:'',
             isbn:'',
             cover:'',
@@ -20,29 +20,11 @@ class EditBuku extends React.Component {
             tahun:'',
             ket:'',
             kategori_buku:'',
+            redirect: false,
             kd_buku: this.props.match.params.kd_buku,
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.InputChangeHandler = this.InputChangeHandler.bind(this)
-    }
-
-    
-    componentDidMount(){
-        //console.log(this.state.kd_buku);
-        const url = `http://localhost:3001/buku/` + this.state.kd_buku;
-        axios.get(url)
-        .then((results) => {
-            const data = results.data
-            this.setState({
-                judul: data.judul,
-                isbn: data.isbn,
-                cover: data.cover,
-                penulis: data.penulis,
-                tahun: data.tahun,
-                ket: data.ket,
-                kategori_buku: data.kategori_buku,
-            })
-        })
     }
     
     InputChangeHandler(event) {
@@ -57,14 +39,20 @@ class EditBuku extends React.Component {
         e.preventDefault();
         // const id = this.state.id
         const data = this.state
-        // delete data.id
-        console.log(data)
-        axios.put('http://localhost:3001/buku/edit/'+ this.state.kd_buku, data)
+        delete data.redirect
+        //delete data.kd_buku
+        //console.log(data)
+        axios.put('http://localhost:3001/buku/'+ this.state.kd_buku, data)
             .then((result) => {
-                    console.log(result)
+                    //console.log(result)
                     this.setState({ redirect: true })
-                    window.location.href = '/Dashboard';
+                    window.location.href = '/Manage_Data';
                 })
+            //     .catch(({ response }) => { 
+            //     console.log(response.data);  
+            //     console.log(response.status);  
+            //     console.log(response.headers);  
+            // })
     }
         
     render() {

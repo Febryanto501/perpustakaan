@@ -7,7 +7,8 @@ import {
     Row,
     Col,
 } from 'reactstrap';
-// 
+import Background from "./assets/images.jpg";
+
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -41,10 +42,14 @@ class Home extends Component {
         //console.table(this.state.data);
         //console.log(this.state.data)
         return (
-            <div>
+            <div style={{backgroundImage: `url(${Background})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: "100vh"}}>
                 <Navs />
                 <div style={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: "center", marginLeft: "10%", marginRight: "20%" }}>
-                <Container style={{ marginTop: 15 }}>
+                <Container style={{ marginTop: 15, marginRight: "20%", marginLeft:"20%"}}>
                     <Row>
                         <Col sm="12" md={{ size: 7, offset:20}}>
                             <ListBuku list={this.state.data} />
