@@ -76,8 +76,11 @@ class ListBuku extends React.Component {
             
          })
         return (
-            <div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end', marginLeft: 150}}>
+            <div style={{ width: 1000, height: "auto",padding: 20,backgroundColor:"white",borderRadius: 10,marginLeft: -100}}>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start'}}>
+                <h3>List Buku</h3>
+                </div>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
                 <Button type="primary" size='xxl' href="/Add" style={{ background: "#21cc02"}}><FontAwesome name='add' />Add</Button>{' '}
                 </div>
                 <br></br>

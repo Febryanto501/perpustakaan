@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import Forms from './Part/FormEdit'
 import Navs from './Part/nav'
+import Background from "./assets/images.jpg";
 
 class EditBuku extends React.Component {
     constructor(props){
@@ -61,8 +62,14 @@ class EditBuku extends React.Component {
 
             <div>
                 <Navs />
-
-                <Container>
+                <div style={{backgroundImage: `url(${Background})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                height: "100vh",
+                width: "100%",
+                paddingTop: 50}}>
+                <Container style={{ width: "auto", height: "auto",padding: 20,backgroundColor:"white",borderRadius: 10}}>
                     <Row>
                         <Col sm="12" md={{ size: 8, offset: 2 }}>
                             <h2 >Edit Buku</h2><br />
@@ -81,6 +88,7 @@ class EditBuku extends React.Component {
                         </Col>
                     </Row>
                 </Container>
+                </div>
             </div>
         )
     }

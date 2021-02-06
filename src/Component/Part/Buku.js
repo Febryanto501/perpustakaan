@@ -7,6 +7,7 @@ import {
   } from 'reactstrap';
 
 
+
 class Buku extends React.Component {
     constructor(props) {
         super(props)
@@ -64,7 +65,7 @@ class Buku extends React.Component {
          })
             
         return (
-            <div >
+            <div>
                 { lists }
             </div>
         );

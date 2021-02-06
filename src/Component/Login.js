@@ -55,7 +55,7 @@ class Login extends React.Component{
         //     return (<Redirect to='/' />)
         // }
         return(
-            <div style={{ width:"100%",height:"100%",justifyContent: "center",alignContent: "center", backgroundImage: `url(${Background})`,
+            <div style={{ width:"100%",justifyContent: "center",alignContent: "center", backgroundImage: `url(${Background})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',

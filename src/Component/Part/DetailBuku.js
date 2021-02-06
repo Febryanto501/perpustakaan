@@ -14,19 +14,22 @@ class DetailBuku extends React.Component {
         //console.log(this.props.detail)
         const e = this.props.detail
         return (
-            <div style={{marginLeft: -600}}>
-            <div style={{marginLeft: 30, fontWeight:"bold"}}>
+            <div>
+            <div style={{fontWeight:"bold"}}>
                 <h3>Detail Buku</h3>
             </div>
-                <Row style={{padding: 30, marginTop: -20}} gutter={16}>
+                <Row gutter={16}>
                 <Col span={6}>
                     <Image
                     width={300}
-                    src={e.cover}  
+                    src={e.cover} 
+                    style={{borderRadius: 10}} 
                     />  
                 </Col>
+                <Col span={6}>
+                </Col>
                 <Col span={18}>
-                <div style={{width: 1000 ,marginLeft: 50}}>
+                <div style={{width: 800 , marginTop: 20}}>
                     <Descriptions title={e.judul} bordered column={{ xs: 2, sm: 2, md: 2 }}>
                     <Descriptions.Item label="ISBN" >{e.isbn}</Descriptions.Item>
                     <Descriptions.Item label="Tahun" >{e.tahun}</Descriptions.Item>

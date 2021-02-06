@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Home';
+import Home from './List';
 import Add from './AddBuku';
 import Edit from './EditBuku';
 import Dashboard from './Dashboard';

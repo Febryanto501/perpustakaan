@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Buku from './Part/Buku';
 import Navs from './Part/nav';
-import { Card } from 'antd';
 import './App.css';
+import Background from "./assets/images.jpg";
 
 class Dashboard extends Component {
     constructor(props) {
@@ -35,21 +35,19 @@ class Dashboard extends Component {
             <>
             <Navs />
             
-            <Card 
-                style={{ width: '90%', display: 'inline-block', marginLeft: '5%', marginRight: '5%',paddingBottom:100, borderWidth: 0}}
-            >
+            
                 {/* <Search placeholder="input search text" onSearch={onSearch} enterButton /> */}
-                <div>
+                <div style={{backgroundImage: `url(${Background})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                height: "100vh",
+                width: "100%"}}>
                 <Buku
                     list={this.state.data}
                 />
-                {/* {allSearchMovieList.map((item) =>
-                    <Buku
-                    list={this.state.data}
-                    />
-                )} */}
                 </div>
-            </Card>
+            
             
             </>
         );

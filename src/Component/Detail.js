@@ -7,7 +7,8 @@ import {
     Row,
     Col,
 } from 'reactstrap';
-// 
+import Background from "./assets/images.jpg";
+
 class Detail extends Component {
     constructor(props) {
         super(props)
@@ -43,14 +44,22 @@ class Detail extends Component {
         return (
             <div>
                 <Navs />
-                <div style={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: "center", marginLeft: "10%", marginRight: "20%" }}>
-                <Container style={{ marginTop: 15 }}>
+                <div style={{backgroundImage: `url(${Background})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                height: "100vh",
+                width: "100%",
+                paddingTop:20}}>
+                {/* <div style={{ width: '100%', display: 'flex', justifyContent: "center", alignItems: "center", marginLeft: "10%", marginRight: "20%" }}> */}
+                <Container style={{ width: "auto", height: "auto",backgroundColor:"white",borderRadius: 10,padding: 20}}>
                     <Row>
-                        <Col sm="12" md={{ size: 7, offset:20}}>
+                        <Col sm="12" md={{ size: 8, offset:2}}>
                             <DetailBuku detail={this.state.data} />
                         </Col>
                     </Row>
                 </Container>
+                {/* </div> */}
                 </div>
             </div>
         );

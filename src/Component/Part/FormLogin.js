@@ -2,7 +2,7 @@ import React from 'react'
 class FormLogin extends React.Component{
     render(){
         return(
-            <div className="container" style={{ width: 500, height: 300,padding: 20,backgroundColor:"white"}}>
+            <div className="container" style={{ width: 500, height: 300,padding: 20,backgroundColor:"white",borderRadius: 10}}>
                 <div className="row justify-content-center">
                         <div className="col-md-6">
                         <h2 className="row justify-content-center">Login</h2>
