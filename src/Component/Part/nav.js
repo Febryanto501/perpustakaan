@@ -7,11 +7,11 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
+    // UncontrolledDropdown,
+    // DropdownToggle,
+    // DropdownMenu,
+    // DropdownItem,
+    // NavbarText
 } from 'reactstrap';
 
 class nav extends Component {
@@ -32,17 +32,20 @@ class nav extends Component {
         return(
             <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/Dashboard">Perpustakaan</NavbarBrand>
+                <NavbarBrand href="/Home">Perpustakaan</NavbarBrand>
                 <NavbarToggler />
                 <Collapse navbar>
                 <Nav className="mr-auto" navbar>
                     <NavItem>
-                    <NavLink href="/Dashboard">Dashboard</NavLink>
+                    <NavLink href="/Home">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/Manage_Data">Manage Data</NavLink>
+                    <NavLink href="/Manage_Data">Manage Buku</NavLink>
                     </NavItem>
-                    <UncontrolledDropdown nav inNavbar>
+                    {/* <NavItem>
+                    <NavLink href="/Add">Add Buku</NavLink>
+                    </NavItem> */}
+                    {/* <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                         Options
                     </DropdownToggle>
@@ -58,9 +61,9 @@ class nav extends Component {
                         Reset
                         </DropdownItem>
                     </DropdownMenu>
-                    </UncontrolledDropdown>
+                    </UncontrolledDropdown> */}
                 </Nav>
-                <NavbarText>Simple Text</NavbarText>
+                {/* <NavbarText>Simple Text</NavbarText> */}
                 </Collapse>
             </Navbar>
             </div>

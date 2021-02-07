@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Home';
+import Home from './List';
 import Add from './AddBuku';
 import Edit from './EditBuku';
 import Dashboard from './Dashboard';
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
           <Switch>
-            <Route exact path='/Dashboard' component={Dashboard} />
+            <Route exact path='/Home' component={Dashboard} />
             <Route exact path='/Manage_Data' component={Home} />
             <Route exact path='/Add' component={Add} />
             <Route exact path='/Edit/:kd_buku' component={Edit} />

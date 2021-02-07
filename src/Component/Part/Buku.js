@@ -7,6 +7,7 @@ import {
   } from 'reactstrap';
 
 
+
 class Buku extends React.Component {
     constructor(props) {
         super(props)
@@ -35,8 +36,8 @@ class Buku extends React.Component {
             if (img === ""){
                 return (
                     // <div style={{ width: 240 ,display: 'inline-block',margin:50, boxShadow : "8px 7px 13px 0px #dadada"}}>
-                    <Card style={{ width: 240 ,display: 'inline-block',margin:50, boxShadow : "8px 7px 13px 0px #dadada" }}>
-                        <CardImg style={{maxHeight: "80%" ,padding: 20, display: "flex", justifyContent: "center"}} src={logo} alt="Card image cap" />
+                    <Card style={{ width: 240 ,display: 'inline-block',margin:30, boxShadow : "8px 7px 13px 0px #dadada" }}>
+                        <CardImg style={{maxHeight: "80%" ,padding: 20, display: "flex", justifyContent: "center"}} src={logo} alt="Image" />
                         <CardBody>
                         <CardTitle tag="h5">{e.judul}</CardTitle>
                         <CardSubtitle tag="h6" className="mb-2 text-muted">{e.tahun}</CardSubtitle>
@@ -49,8 +50,8 @@ class Buku extends React.Component {
             }else{
              return (
                 // <div style={{ width: 240 ,display: 'inline-block',margin:50, boxShadow : "8px 7px 13px 0px #dadada" }}>
-                <Card style={{ width: 240 ,display: 'inline-block',margin:50, boxShadow : "8px 7px 13px 0px #dadada", borderRadius: 10 }}>
-                    <CardImg  style={{maxHeight: "80%" ,padding: 20, display: "flex", justifyContent: "center"}} src={e.cover} alt="Card image cap" />
+                <Card style={{ width: 240 ,display: 'inline-block',margin:30, boxShadow : "8px 7px 13px 0px #dadada", borderRadius: 10 }}>
+                    <CardImg  style={{maxHeight: "80%" ,padding: 20, display: "flex", justifyContent: "center"}} src={e.cover} alt="Image" />
                     <CardBody>
                     <CardTitle tag="h5">{e.judul}</CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">{e.tahun}</CardSubtitle>
@@ -64,7 +65,7 @@ class Buku extends React.Component {
          })
             
         return (
-            <div >
+            <div>
                 { lists }
             </div>
         );

@@ -40,9 +40,9 @@ class FormEdit extends React.Component{
                     <Label for="examplePassword" sm={2}>Cover</Label>
                     <Col sm={10}>
                         <Input
-                            type="file"
+                            type="text"
                             name="cover"
-                            placeholder="Cover"
+                            placeholder="Url Gambar"
                             value={this.props.cover}
                             onChange={this.props.InputChangeHandler}
                         />
